@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  padding: 20px;
+  font-size: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-top: 1px solid #ffc107;
+  box-shadow: 0px 1px 5px 0px rgb(53, 141, 156);
 }
 
-.App-link {
-  color: #61dafb;
+.ToggleBtn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header ul {
+  display: flex;
+  gap: 25px;
+}
+
+header ul li {
+  list-style: none;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+#Home {
+  display: flex;
+}
+
+#myBox {
+  margin: 20px 30px;
+  width: 800px;
+  height: 250px;
+  outline: none;
+  font-size: 18px;
+  border: 1px solid slategrey;
+  padding: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+  padding-top: 15px;
+  margin-left: 30px;
+}
+
+.Button {
+  background-color: #ffc107;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 7px;
+}
+
+.form-switch {
+  outline: none;
+}
+
+.Button:hover {
+  background-color: palegoldenrod;
+  color: #333;
+}
+
+.search i {
+  position: relative;
+  right: 30px;
+}
+
+.summary {
+  margin: 10px;
+}
+
+@media screen and (max-width:800px) {
+  * {
+    margin: 0;
+    padding: 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header {
+    padding: 10px;
+  }
+
+  .header ul {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+  }
+
+  #Home {
+    display: block;
+    margin: 5px;
+  }
+
+  #myBox {
+    margin: 5px 10px;
+  width: 350px;
+  }
+  .buttonGroup{
+    width: 250px;
+    margin: 10px;
+  }
+  .Button{
+    background-color: #fff;
+    color:rgb(21, 87, 87);
+    border: 1px solid #ffc107;
+    font-size: 17px;
   }
 }
