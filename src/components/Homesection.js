@@ -27,6 +27,7 @@ export default function TextForm(props) {
     setText(reverseText);
     props.showAlert("Text Reversed" , 'success');
   }
+
   const HandleExtraSpace = ()=>{
  const newText = text.replace(/\s+/g," ").trim()
  setText(newText)
@@ -35,11 +36,11 @@ export default function TextForm(props) {
   const [text, setText] = useState('')
   return (
     <>
-      <main>
-        <h2 className='textBox ms-3' >Text Box</h2>
+      <main className='mainSection'>
+        <h2 className='textBox' >Text Box</h2>
         <section id='Home'>
           <textarea id="myBox" value={text} onChange={HandleChange} placeholder='Enter text here' />
-          <div className="buttonGroup border-start">
+          <div className="buttonGroup">
           <button className='Button' onClick={HandleUpperCase}>Convert to Upper Case</button>
           <button className='Button' onClick={HandleLowerCase}>Convert to Lower Case</button>
           <button className='Button' onClick={HandleExtraSpace}>Remove ExtraSpace</button>
@@ -48,14 +49,14 @@ export default function TextForm(props) {
           <button className='Button' onClick={HandleRemove}>Clear Text</button>
           </div>        
         </section>
-      <section className="summary ms-5 ">
+      <section className="summary">
         <h3>Text Summary</h3>
         <div className="wordCounting">
           <p>{text.trim().split(/\s+/).filter(Boolean).length} words  {text.trim().length} Characters</p>
         <h4>Time to read the text</h4>
           <p>{0.008 * text.split("").length} seconds</p>
           <h1>Preview</h1>
-          <p>{text.length > 0 ? text : 'Enter something in textbox to preview'}</p>
+          <p>{text.length > 0 ? text : 'Enter something in textbox to preview here'}</p>
         </div>
       </section>
       </main>

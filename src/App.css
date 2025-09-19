@@ -19,26 +19,21 @@
   padding: 10px 12px;
 }
 
-header ul {
-  display: flex;
-  gap: 25px;
+.textBox {
+  margin-bottom: 20px;
 }
 
-header ul li {
-  list-style: none;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: #333;
-}
 
 #Home {
   display: flex;
+  align-items: center;
+}
+
+.mainSection {
+  margin: 50px;
 }
 
 #myBox {
-  margin: 20px 30px;
   width: 800px;
   height: 250px;
   outline: none;
@@ -50,8 +45,6 @@ header ul li a {
 .buttonGroup {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
   padding: 10px;
   padding-top: 15px;
   margin-left: 30px;
@@ -80,7 +73,7 @@ header ul li a {
 }
 
 .summary {
-  margin: 10px;
+  margin-top: 30px;
 }
 
 @media screen and (max-width:800px) {
@@ -93,28 +86,26 @@ header ul li a {
     padding: 10px;
   }
 
-  .header ul {
-    display: flex;
-    gap: 10px;
-    padding: 5px;
+  .mainSection {
+    margin: 10px;
   }
 
   #Home {
     display: block;
-    margin: 5px;
   }
 
   #myBox {
-    margin: 5px 10px;
-  width: 350px;
+    width: 330px;
   }
-  .buttonGroup{
+
+  .buttonGroup {
     width: 250px;
     margin: 10px;
   }
-  .Button{
+
+  .Button {
     background-color: #fff;
-    color:rgb(21, 87, 87);
+    color: rgb(21, 87, 87);
     border: 1px solid #ffc107;
     font-size: 17px;
   }

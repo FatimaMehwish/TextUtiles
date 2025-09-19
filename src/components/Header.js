@@ -5,9 +5,7 @@ export default function Header(props) {
    <>
     <header className={`header navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
    <ul>
-    <li><a className={`text-${props.mode === 'light'?'dark':'light'}`} href="/">TextUtiles</a></li>
-    <li><a className={`text-${props.mode === 'light'?'dark':'light'}`} href="/">Home</a></li>
-    <li><a className={`text-${props.mode === 'light'?'dark':'light'}`} href="/">Contact</a></li>
+     <span className={`text-${props.mode === 'light'?'dark':'light'}`}>TextUtiles </span>
    </ul>
    <div className="search">
      <div className="form-check form-switch">
